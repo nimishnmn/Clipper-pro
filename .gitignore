@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode / DerivedData
+build/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+xcuserdata/
+
+# Clipper Pro runtime artifacts & cache
+ClipperPro.app
+Cache/
+Projects/
+*.clipperproj
+
+# Large binaries (downloaded or bundled dynamically)
+ClipperPro/Resources/ffmpeg

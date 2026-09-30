@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B9646AF6BF481386637B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CF73AC74B345C7AF128F61 /* Assets.xcassets */; };
+		2772139D74044BB096CD9BB0 /* ThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000DF10F5442208EC6ED83 /* ThumbnailService.swift */; };
+		2C0A85F487CE4DAA8FF644C5 /* ClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED52410BCD9D42A7AB5CFC87 /* ClipCell.swift */; };
+		3303B3F873724DD39832942E /* MetadataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401B6D587B94901A27A8FFE /* MetadataReader.swift */; };
+		39DD126AC9BF40228DCF84EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB30A063B24641834A6B5E /* ContentView.swift */; };
+		3B063CB8CC5F4FDBB87B2D0E /* SceneDetectionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C35EFE9C7D8464288FD048A /* SceneDetectionProgressView.swift */; };
+		57CED641D1A441A2A5F547B2 /* ClipGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DF7A53A9243A2B1C850A3 /* ClipGridView.swift */; };
+		5979432E6F7C4AC9A3D93CC7 /* SceneDetectorPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DDE6A4DE84177AEE15375 /* SceneDetectorPipeline.swift */; };
+		60AE22C9F9AC479AAE6304A6 /* ExportSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A32348FE574CCA9C3673BB /* ExportSettingsView.swift */; };
+		6601D145953C4E71BF4DAC2F /* SelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32A0DCF9E8748309F9928F7 /* SelectionManager.swift */; };
+		6934C4311F024BE98F9E5195 /* HoverPreviewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681DFDBEB6243598CA78044 /* HoverPreviewPlayer.swift */; };
+		6B88B1555595437EA8D8EE2F /* FrameDiffPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38B2E98A2444A2BE717889 /* FrameDiffPipeline.swift */; };
+		84D72E599A21402A95A01711 /* BookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892B8CF2EAA433596079453 /* BookmarkService.swift */; };
+		87AFEF7063874CE39E0D6233 /* FrameDiffPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38B2E98A2444A2BE717889 /* FrameDiffPipeline.swift */; };
+		A85A249AA8EC48269D5501C9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D481374F3B4C4F93A48A12 /* AppState.swift */; };
+		B1CD32A40083482D8B61527C /* ExportEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92072AA7C4E40FCBBD2DF02 /* ExportEngine.swift */; };
+		D07B3DFB36D2454F815B6954 /* VideoClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237E0912138442EAA7BE4B3 /* VideoClip.swift */; };
+		D3866FB1E16145868665F0A9 /* ClipperProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9600FB7FBA14D268E083F37 /* ClipperProApp.swift */; };
+		E824D64D7E7747B1AB3E9706 /* ExportSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8364BCF6621F4690A436DF39 /* ExportSettings.swift */; };
+		F80C4CF33AB2486EBDD27BED /* DetectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409122B0D81E4DB1A4BBE35F /* DetectionConfig.swift */; };
+		FE7062F38DF4452AAA45CACF /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA1EB21FE4497EBE246245 /* ImportView.swift */; };
+		E8240001AAA44B068D8A0001 /* SceneDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99384036A7BD4B80974885C0 /* SceneDetector.swift */; };
+		E8240002AAA44B068D8A0002 /* ExportProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914C484EECB24CBCAED99286 /* ExportProgressView.swift */; };
+		BB000002AABB4C39B758D802 /* MediaTransmuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000001AABB4C39B758D801 /* MediaTransmuxer.swift */; };
+		BB000004AABB4C39B758D804 /* SensitivityControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000003AABB4C39B758D803 /* SensitivityControlView.swift */; };
+		BB000006AABB4C39B758D806 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB000005AABB4C39B758D805 /* ffmpeg */; };
+		CC000002AABB4C39B758D802 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000001AABB4C39B758D801 /* ProjectStore.swift */; };
+		CC000004AABB4C39B758D804 /* ClipEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000003AABB4C39B758D803 /* ClipEditorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A3DDE6A4DE84177AEE15375 /* SceneDetectorPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDetectorPipeline.swift; sourceTree = "<group>"; };
+		2A000DF10F5442208EC6ED83 /* ThumbnailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailService.swift; sourceTree = "<group>"; };
+		2AEB58F6B2B64AEDBB949EC3 /* ClipperPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ClipperPro.entitlements"; sourceTree = "<group>"; };
+		3401B6D587B94901A27A8FFE /* MetadataReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataReader.swift; sourceTree = "<group>"; };
+		409122B0D81E4DB1A4BBE35F /* DetectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionConfig.swift; sourceTree = "<group>"; };
+		409DF7A53A9243A2B1C850A3 /* ClipGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipGridView.swift; sourceTree = "<group>"; };
+		4237E0912138442EAA7BE4B3 /* VideoClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClip.swift; sourceTree = "<group>"; };
+		4681DFDBEB6243598CA78044 /* HoverPreviewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverPreviewPlayer.swift; sourceTree = "<group>"; };
+		48CF73AC74B345C7AF128F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BDB30A063B24641834A6B5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C38B2E98A2444A2BE717889 /* FrameDiffPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameDiffPipeline.swift; sourceTree = "<group>"; };
+		6A2010B362754932AE34494D /* FrameDiff.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FrameDiff.metal; sourceTree = "<group>"; };
+		6C35EFE9C7D8464288FD048A /* SceneDetectionProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDetectionProgressView.swift; sourceTree = "<group>"; };
+		8364BCF6621F4690A436DF39 /* ExportSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSettings.swift; sourceTree = "<group>"; };
+		85FD2A4274F844DE920D498F /* ClipperPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipperPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		914C484EECB24CBCAED99286 /* ExportProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportProgressView.swift; sourceTree = "<group>"; };
+		91D481374F3B4C4F93A48A12 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		99384036A7BD4B80974885C0 /* SceneDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDetector.swift; sourceTree = "<group>"; };
+		A9600FB7FBA14D268E083F37 /* ClipperProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipperProApp.swift; sourceTree = "<group>"; };
+		ADEA1EB21FE4497EBE246245 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		B892B8CF2EAA433596079453 /* BookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
+		C32A0DCF9E8748309F9928F7 /* SelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionManager.swift; sourceTree = "<group>"; };
+		D5A32348FE574CCA9C3673BB /* ExportSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSettingsView.swift; sourceTree = "<group>"; };
+		E29E2E2DC5F344E68CD066B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92072AA7C4E40FCBBD2DF02 /* ExportEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportEngine.swift; sourceTree = "<group>"; };
+		ED52410BCD9D42A7AB5CFC87 /* ClipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipCell.swift; sourceTree = "<group>"; };
+		BB000001AABB4C39B758D801 /* MediaTransmuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTransmuxer.swift; sourceTree = "<group>"; };
+		BB000003AABB4C39B758D803 /* SensitivityControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivityControlView.swift; sourceTree = "<group>"; };
+		BB000005AABB4C39B758D805 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
+		CC000001AABB4C39B758D801 /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		CC000003AABB4C39B758D803 /* ClipEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipEditorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDA7D93EA10742489F7D5F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		/* Root group */
+		C9C74F70F83A4DCC85BC9EC1 = {
+			isa = PBXGroup;
+			children = (
+				AA000001AABB4C39B758D8F0 /* ClipperPro */,
+				1A260B6305E64EEA8DDD72A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A260B6305E64EEA8DDD72A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85FD2A4274F844DE920D498F /* ClipperPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000001AABB4C39B758D8F0 /* ClipperPro */ = {
+			isa = PBXGroup;
+			children = (
+				AA000002AABB4C39B758D8F1 /* App */,
+				AA000003AABB4C39B758D8F2 /* Features */,
+				AA000008AABB4C39B758D8F7 /* Metal */,
+				AA000009AABB4C39B758D8F8 /* Models */,
+				AA00000AAABB4C39B758D8F9 /* Services */,
+				AA00000BAABB4C39B758D8FA /* Resources */,
+			);
+			path = ClipperPro;
+			sourceTree = "<group>";
+		};
+		AA000002AABB4C39B758D8F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9600FB7FBA14D268E083F37 /* ClipperProApp.swift */,
+				91D481374F3B4C4F93A48A12 /* AppState.swift */,
+				5BDB30A063B24641834A6B5E /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA000003AABB4C39B758D8F2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AA000004AABB4C39B758D8F3 /* Import */,
+				AA000005AABB4C39B758D8F4 /* SceneDetection */,
+				AA000006AABB4C39B758D8F5 /* Grid */,
+				AA000007AABB4C39B758D8F6 /* Export */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AA000004AABB4C39B758D8F3 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA1EB21FE4497EBE246245 /* ImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		AA000005AABB4C39B758D8F4 /* SceneDetection */ = {
+			isa = PBXGroup;
+			children = (
+				99384036A7BD4B80974885C0 /* SceneDetector.swift */,
+				0A3DDE6A4DE84177AEE15375 /* SceneDetectorPipeline.swift */,
+				6C35EFE9C7D8464288FD048A /* SceneDetectionProgressView.swift */,
+				BB000003AABB4C39B758D803 /* SensitivityControlView.swift */,
+			);
+			path = SceneDetection;
+			sourceTree = "<group>";
+		};
+		AA000006AABB4C39B758D8F5 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				409DF7A53A9243A2B1C850A3 /* ClipGridView.swift */,
+				ED52410BCD9D42A7AB5CFC87 /* ClipCell.swift */,
+				CC000003AABB4C39B758D803 /* ClipEditorView.swift */,
+				4681DFDBEB6243598CA78044 /* HoverPreviewPlayer.swift */,
+				C32A0DCF9E8748309F9928F7 /* SelectionManager.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		AA000007AABB4C39B758D8F6 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				E92072AA7C4E40FCBBD2DF02 /* ExportEngine.swift */,
+				D5A32348FE574CCA9C3673BB /* ExportSettingsView.swift */,
+				914C484EECB24CBCAED99286 /* ExportProgressView.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		AA000008AABB4C39B758D8F7 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				6A2010B362754932AE34494D /* FrameDiff.metal */,
+				5C38B2E98A2444A2BE717889 /* FrameDiffPipeline.swift */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		AA000009AABB4C39B758D8F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4237E0912138442EAA7BE4B3 /* VideoClip.swift */,
+				8364BCF6621F4690A436DF39 /* ExportSettings.swift */,
+				409122B0D81E4DB1A4BBE35F /* DetectionConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA00000AAABB4C39B758D8F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3401B6D587B94901A27A8FFE /* MetadataReader.swift */,
+				B892B8CF2EAA433596079453 /* BookmarkService.swift */,
+				2A000DF10F5442208EC6ED83 /* ThumbnailService.swift */,
+				BB000001AABB4C39B758D801 /* MediaTransmuxer.swift */,
+				CC000001AABB4C39B758D801 /* ProjectStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA00000BAABB4C39B758D8FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48CF73AC74B345C7AF128F61 /* Assets.xcassets */,
+				2AEB58F6B2B64AEDBB949EC3 /* ClipperPro.entitlements */,
+				E29E2E2DC5F344E68CD066B4 /* Info.plist */,
+				BB000005AABB4C39B758D805 /* ffmpeg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1470212339A40719CF91D13 /* ClipperPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A48CD01ABC4A959D5932EA /* Build configuration list for PBXNativeTarget "ClipperPro" */;
+			buildPhases = (
+				19C0C26728254251BF39151F /* Sources */,
+				BDA7D93EA10742489F7D5F80 /* Frameworks */,
+				EEB65BB35991439BAFC48E67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipperPro;
+			productName = ClipperPro;
+			productReference = 85FD2A4274F844DE920D498F /* ClipperPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA75B64FB8CB4C39B758D8F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F1470212339A40719CF91D13 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B81E7DA27EFC4647B131A492 /* Build configuration list for PBXProject "ClipperPro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C74F70F83A4DCC85BC9EC1;
+			productRefGroup = 1A260B6305E64EEA8DDD72A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1470212339A40719CF91D13 /* ClipperPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEB65BB35991439BAFC48E67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B9646AF6BF481386637B8D /* Assets.xcassets in Resources */,
+				BB000006AABB4C39B758D806 /* ffmpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C0C26728254251BF39151F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85A249AA8EC48269D5501C9 /* AppState.swift in Sources */,
+				D3866FB1E16145868665F0A9 /* ClipperProApp.swift in Sources */,
+				39DD126AC9BF40228DCF84EA /* ContentView.swift in Sources */,
+				FE7062F38DF4452AAA45CACF /* ImportView.swift in Sources */,
+				E8240001AAA44B068D8A0001 /* SceneDetector.swift in Sources */,
+				5979432E6F7C4AC9A3D93CC7 /* SceneDetectorPipeline.swift in Sources */,
+				3B063CB8CC5F4FDBB87B2D0E /* SceneDetectionProgressView.swift in Sources */,
+				57CED641D1A441A2A5F547B2 /* ClipGridView.swift in Sources */,
+				2C0A85F487CE4DAA8FF644C5 /* ClipCell.swift in Sources */,
+				6934C4311F024BE98F9E5195 /* HoverPreviewPlayer.swift in Sources */,
+				6601D145953C4E71BF4DAC2F /* SelectionManager.swift in Sources */,
+				B1CD32A40083482D8B61527C /* ExportEngine.swift in Sources */,
+				60AE22C9F9AC479AAE6304A6 /* ExportSettingsView.swift in Sources */,
+				E8240002AAA44B068D8A0002 /* ExportProgressView.swift in Sources */,
+				6B88B1555595437EA8D8EE2F /* FrameDiffPipeline.swift in Sources */,
+				D07B3DFB36D2454F815B6954 /* VideoClip.swift in Sources */,
+				E824D64D7E7747B1AB3E9706 /* ExportSettings.swift in Sources */,
+				F80C4CF33AB2486EBDD27BED /* DetectionConfig.swift in Sources */,
+				3303B3F873724DD39832942E /* MetadataReader.swift in Sources */,
+				84D72E599A21402A95A01711 /* BookmarkService.swift in Sources */,
+				2772139D74044BB096CD9BB0 /* ThumbnailService.swift in Sources */,
+				BB000002AABB4C39B758D802 /* MediaTransmuxer.swift in Sources */,
+				BB000004AABB4C39B758D804 /* SensitivityControlView.swift in Sources */,
+				CC000002AABB4C39B758D802 /* ProjectStore.swift in Sources */,
+				CC000004AABB4C39B758D804 /* ClipEditorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		/* Project Debug */
+		C1622ACDE8FC40F184D23575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		/* Project Release */
+		F5B6D8917D454F1DB905F8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		/* Target Debug */
+		9299384159B046D7AB0C8F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ClipperPro/Resources/ClipperPro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = NO;
+				INFOPLIST_FILE = "ClipperPro/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clipper.pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		/* Target Release */
+		9B6D0AEFF9A744019D2E84CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ClipperPro/Resources/ClipperPro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = NO;
+				INFOPLIST_FILE = "ClipperPro/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.clipper.pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B81E7DA27EFC4647B131A492 /* Build configuration list for PBXProject "ClipperPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1622ACDE8FC40F184D23575 /* Debug */,
+				F5B6D8917D454F1DB905F8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A48CD01ABC4A959D5932EA /* Build configuration list for PBXNativeTarget "ClipperPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9299384159B046D7AB0C8F84 /* Debug */,
+				9B6D0AEFF9A744019D2E84CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = FA75B64FB8CB4C39B758D8F7 /* Project object */;
+}
